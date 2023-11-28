@@ -1,10 +1,8 @@
-import './App.css';
+import React, { useState } from 'react';
 import TransactionForm from './components/TransactionForm/transactionform';
 import TotalBalance from './components/TotalBalance/totalbalance';
 import IncomeList from './components/IncomeList/incomelist';
-import ExpenseList from './components/ExpenseList/expenselist'
-import React from 'react';
-import { useState } from 'react';
+import ExpenseList from './components/ExpenseList/expenselist';
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
