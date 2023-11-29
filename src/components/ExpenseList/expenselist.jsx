@@ -1,4 +1,5 @@
 import React from 'react';
+import './ExpenseList.css'; // Importe o arquivo de estilos
 
 const ExpenseList = ({ transactions, totalExpense, onDeleteTransaction }) => {
   const handleDelete = (index) => {
@@ -6,7 +7,7 @@ const ExpenseList = ({ transactions, totalExpense, onDeleteTransaction }) => {
   };
 
   return (
-    <div>
+    <div className="expense-list-container">
       <h2>Despesas</h2>
       <ul>
         {transactions.map((transaction, index) => (

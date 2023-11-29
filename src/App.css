@@ -1,5 +1,10 @@
-* {
+.center {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: row;
+  margin: 1px;
+  width: 100%; 
+  justify-content: center;
+  margin-top: 10vh;;
+  /* Definir a largura para ocupar todo o espaço horizontal */
 }
+

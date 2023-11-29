@@ -1,0 +1,11 @@
+/* TotalBalance.css */
+
+.total-balance-container {
+   
+    padding: 20px;
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do conteúdo */
+    border-radius: 8px;
+    background-color: rgb(231, 219, 219); 
+    margin: 10px /* Centraliza o texto */
+  }
+  

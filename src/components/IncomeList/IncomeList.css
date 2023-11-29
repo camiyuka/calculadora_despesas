@@ -1,0 +1,11 @@
+/* IncomeList.css */
+
+.income-list-container {
+    max-width: 400px; /* Define uma largura máxima para o conteúdo */
+    padding: 20px;
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do conteúdo */
+    border-radius: 8px;
+    background-color:  rgb(173, 230, 216);
+    margin: 10px /* Adiciona um fundo para o conteúdo */
+  }
+  

@@ -1,4 +1,5 @@
 import React from 'react';
+import './IncomeList.css'; // Importe o arquivo de estilos
 
 const IncomeList = ({ transactions, totalIncome, onDeleteTransaction }) => {
   const handleDelete = (index) => {
@@ -6,7 +7,7 @@ const IncomeList = ({ transactions, totalIncome, onDeleteTransaction }) => {
   };
 
   return (
-    <div>
+    <div className="income-list-container">
       <h2>Receitas</h2>
       <ul>
         {transactions.map((transaction, index) => (
