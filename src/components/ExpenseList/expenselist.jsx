@@ -1,9 +1,8 @@
 import React from 'react';
-import './expenselist.css'
 
-function ExpenseList({ transactions, totalExpense, onDeleteTransaction }) {
+const ExpenseList = ({ transactions, totalExpense, onDeleteTransaction }) => {
   const handleDelete = (index) => {
-    onDeleteTransaction(index);
+    onDeleteTransaction(index, transactions[index].amount, 'expense');
   };
 
   return (
@@ -20,6 +19,6 @@ function ExpenseList({ transactions, totalExpense, onDeleteTransaction }) {
       <p>Total de Despesas: R$ {totalExpense}</p>
     </div>
   );
-}
+};
 
 export default ExpenseList;

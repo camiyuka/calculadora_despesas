@@ -19,6 +19,18 @@ const App = () => {
     }
   };
 
+  const handleDeleteTransaction = (index, amount, type) => {
+    const updatedTransactions = [...transactions];
+    updatedTransactions.splice(index, 1);
+
+    setTransactions(updatedTransactions);
+
+    if (type === 'income') {
+      setTotalIncome(totalIncome - amount);
+    } else {
+      setTotalExpense(totalExpense - amount);
+    }
+  };
   const getTotalBalance = () => {
     return totalIncome - totalExpense;
   };
@@ -26,8 +38,16 @@ const App = () => {
   return (
     <div>
       <TransactionForm onAddTransaction={handleAddTransaction} />
-      <IncomeList transactions={transactions.filter((t) => t.type === 'income')} totalIncome={totalIncome} />
-      <ExpenseList transactions={transactions.filter((t) => t.type === 'expense')} totalExpense={totalExpense} />
+      <IncomeList
+        transactions={transactions.filter((t) => t.type === 'income')}
+        totalIncome={totalIncome}
+        onDeleteTransaction={handleDeleteTransaction}
+      />
+      <ExpenseList
+        transactions={transactions.filter((t) => t.type === 'expense')}
+        totalExpense={totalExpense}
+        onDeleteTransaction={handleDeleteTransaction}
+      />
       <TotalBalance totalBalance={getTotalBalance()} />
     </div>
   );

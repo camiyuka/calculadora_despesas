@@ -1,6 +1,10 @@
 import React from 'react';
 
-const IncomeList = ({ transactions, totalIncome }) => {
+const IncomeList = ({ transactions, totalIncome, onDeleteTransaction }) => {
+  const handleDelete = (index) => {
+    onDeleteTransaction(index, transactions[index].amount, 'income');
+  };
+
   return (
     <div>
       <h2>Receitas</h2>
@@ -8,6 +12,7 @@ const IncomeList = ({ transactions, totalIncome }) => {
         {transactions.map((transaction, index) => (
           <li key={index}>
             {transaction.name}: R$ {transaction.amount}
+            <button onClick={() => handleDelete(index)}>Excluir</button>
           </li>
         ))}
       </ul>
