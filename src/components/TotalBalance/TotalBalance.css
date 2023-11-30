@@ -1,11 +1,10 @@
 /* TotalBalance.css */
 
+/* Estilos para o container do saldo total */
 .total-balance-container {
-   
-    padding: 20px;
-    border: 1px solid #ccc; /* Adiciona uma borda ao redor do conteúdo */
-    border-radius: 8px;
-    background-color: rgb(231, 219, 219); 
-    margin: 10px /* Centraliza o texto */
-  }
-  
+  padding: 20px; /* Adiciona um preenchimento interno ao redor do conteúdo */
+  border: 1px solid #ccc; /* Adiciona uma borda ao redor do conteúdo com cor cinza */
+  border-radius: 8px; /* Arredonda os cantos da borda */
+  background-color: rgb(231, 219, 219); /* Define a cor de fundo do container */
+  margin: 10px; /* Define uma margem ao redor do container */
+}
