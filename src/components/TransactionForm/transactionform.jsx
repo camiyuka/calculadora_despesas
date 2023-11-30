@@ -2,24 +2,30 @@ import React, { useState } from 'react';
 import './TransactionForm.css'; // Importe o arquivo de estilos
 
 const TransactionForm = ({ onAddTransaction }) => {
+  // Estados para controlar os valores do formulário
   const [name, setName] = useState('');
   const [amount, setAmount] = useState('');
   const [type, setType] = useState('income');
   const [paymentMethod, setPaymentMethod] = useState('cash');
 
+  // Função para lidar com o envio do formulário
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Previne o comportamento padrão de envio do formulário
+     // Cria um objeto com os valores do novo lançamento
     const newTransaction = {
       name,
       amount: Number(amount),
       type,
       paymentMethod,
     };
+    // Chama a função recebida por prop para adicionar a nova transação
     onAddTransaction(newTransaction);
+    // Limpa os campos do formulário após o envio
     setName('');
     setAmount('');
   };
 
+   // Renderização do componente
   return (
    
     <form className="transaction-form" onSubmit={handleSubmit}>
@@ -49,4 +55,4 @@ const TransactionForm = ({ onAddTransaction }) => {
   );
 };
 
-export default TransactionForm;
+export default TransactionForm;  // Exporta o componente TransactionForm
