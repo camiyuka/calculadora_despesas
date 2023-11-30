@@ -1,11 +1,14 @@
 import React from 'react';
-import './IncomeList.css'; // Importe o arquivo de estilos
+import './IncomeList.css'; // Importação do arquivo de estilos
 
 const IncomeList = ({ transactions, totalIncome, onDeleteTransaction }) => {
+   // Função para lidar com a exclusão de uma transação de receita
   const handleDelete = (index) => {
+     // Chama a função onDeleteTransaction passando o índice, o valor da transação e o tipo ('income')
     onDeleteTransaction(index, transactions[index].amount, 'income');
   };
-
+  
+  // Renderização do componente
   return (
     <div className="income-list-container">
       <h2>Receitas</h2>
@@ -22,4 +25,4 @@ const IncomeList = ({ transactions, totalIncome, onDeleteTransaction }) => {
   );
 };
 
-export default IncomeList;
+export default IncomeList; // Exporta o componente IncomeList
