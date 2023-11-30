@@ -1,7 +1,9 @@
 import React from 'react';
-import './TotalBalance.css'; // Importe o arquivo de estilos
+import './TotalBalance.css'; // Importação do arquivo de estilos
 
+// Componente TotalBalance que recebe a prop totalBalance
 const TotalBalance = ({ totalBalance }) => {
+  // Renderização do componente
   return (
     <div className="total-balance-container">
       <h2>Soma Total na Carteira</h2>
@@ -10,4 +12,4 @@ const TotalBalance = ({ totalBalance }) => {
   );
 };
 
-export default TotalBalance;
+export default TotalBalance;  // Exporta o componente TotalBalance
