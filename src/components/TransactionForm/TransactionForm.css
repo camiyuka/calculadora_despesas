@@ -1,41 +1,43 @@
-/* TransactionForm.css */
 
+/* Estilos para o formulário de transação */
 .transaction-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  /* Define uma largura máxima para o conteúdo */
-    padding: 20px;
-    background-color: rgb(231, 219, 219); 
-    margin:10px;
-  }
-  
-  .input-group {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .radio-group {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin:20px;
-  }
-  
-  button:hover {
-    background-color: #a4c4da;
-  }
-  
+  display: flex; /* Define o layout como flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  align-items: flex-start; /* Alinha os itens no início do eixo transversal */
+  border-radius: 8px; /* Arredonda os cantos do formulário */
+  border: 1px solid #ccc; /* Adiciona uma borda ao redor do formulário */
+  padding: 20px; /* Adiciona um preenchimento interno ao redor do conteúdo do formulário */
+  background-color: rgb(231, 219, 219); /* Define a cor de fundo do formulário */
+  margin: 10px; /* Define uma margem ao redor do formulário */
+}
+
+/* Estilos para o grupo de inputs dentro do formulário */
+.input-group {
+  display: flex; /* Define o layout como flexível */
+  gap: 10px; /* Define um espaçamento entre os itens */
+  margin-bottom: 10px; /* Adiciona margem na parte inferior do grupo de inputs */
+}
+
+/* Estilos para o grupo de radio buttons dentro do formulário */
+.radio-group {
+  display: flex; /* Define o layout como flexível */
+  gap: 10px; /* Define um espaçamento entre os itens */
+  margin-bottom: 10px; /* Adiciona margem na parte inferior do grupo de radio buttons */
+}
+
+/* Estilos para os botões dentro do formulário */
+button {
+  padding: 8px 12px; /* Adiciona preenchimento interno ao redor do texto do botão */
+  background-color: #3498db; /* Define a cor de fundo do botão */
+  color: #fff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 4px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+  margin: 20px; /* Define uma margem ao redor do botão */
+}
+
+/* Efeito de hover para os botões dentro do formulário */
+button:hover {
+  background-color: #a4c4da; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
