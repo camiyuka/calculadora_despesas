@@ -1,10 +1,10 @@
-.center {
-  display: flex;
-  flex-direction: row;
-  margin: 1px;
-  width: 100%; 
-  justify-content: center;
-  margin-top: 10vh;;
-  /* Definir a largura para ocupar todo o espaço horizontal */
-}
 
+.center {
+  display: flex; /* Define o elemento como flexível */
+  flex-direction: row; /* Define a direção dos elementos como linha */
+  margin: 1px; /* Adiciona uma margem de 1px ao redor do elemento */
+  width: 100%; /* Define a largura do elemento para ocupar todo o espaço horizontal disponível */
+  justify-content: center; /* Alinha os itens ao centro ao longo do eixo principal (horizontal, neste caso) */
+  margin-top: 10vh; /* Adiciona uma margem no topo equivalente a 10% da altura da janela (viewport height) */
+  /* Há um ';' a mais no final da propriedade margin-top, é recomendado remover para evitar erros */
+}
